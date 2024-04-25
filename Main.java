@@ -66,7 +66,7 @@ public class Main {
     }
 
     static void addPatron(Library library) {
-        sc.nextLine(); // Consume newline
+        sc.nextLine();
         String name;
         int ID;
 
@@ -79,7 +79,7 @@ public class Main {
     }
 
     static void borrowBook(Library library) {
-        sc.nextLine(); // Consume newline
+        sc.nextLine();
         System.out.print("Enter Patron ID: ");
         int patronID = sc.nextInt();
         System.out.print("Enter Book ISBN: ");
@@ -145,7 +145,7 @@ public class Main {
     }
 
     static void checkFines(Library library) {
-        sc.nextLine(); // Consume newline
+        sc.nextLine();
         System.out.print("Enter Patron ID: ");
         int patronID = sc.nextInt();
 
@@ -159,7 +159,6 @@ public class Main {
         }
 
         if (patron != null) {
-            // Calculate fines (if any) and display
             System.out.println("Total fines for Patron " + patron.getName() + " (ID: " + patron.getID() + "): $0.00");
         } else {
             System.out.println("Invalid patron ID.");
